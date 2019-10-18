@@ -25,7 +25,7 @@ public class UpdateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_update);
         dbHelper = new DataHelper(this);
 
-        dbHelper = new DataHelper(this);
+        dbHelper = new  DataHelper(this);
         editTextDate = (EditText) findViewById(R.id.edtDate);
         editTextLabel = (EditText) findViewById(R.id.edtLabel);
         editTextNbVisits = (EditText) findViewById(R.id.edtNbVisits);

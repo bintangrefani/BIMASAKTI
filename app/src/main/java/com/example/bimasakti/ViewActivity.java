@@ -31,7 +31,7 @@ public class ViewActivity extends AppCompatActivity {
         cursor = db.rawQuery("SELECT * FROM bimasakti WHERE LABEL = '" +
                 getIntent().getStringExtra("LABEL") + "'", null);
         cursor.moveToFirst();
-        //Hasil masih dalam bentuk cursor, yaitu terdiri dari baris dan kolom
+
         if(cursor.getCount() > 0) {
             cursor.moveToPosition(0);
             textViewDate.setText(cursor.getString(0).toString());
